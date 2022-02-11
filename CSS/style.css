@@ -4,7 +4,7 @@
 @font-face{
   font-family: "MechePro";
   src: url("../шрифты/MechePro-Light.woff2")format("woff2"),url("../шрифты/MechePro-Light.woff")format("woff");
-  font-weight: 300px;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
