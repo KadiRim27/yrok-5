@@ -1,0 +1,285 @@
+
+@import  "null.css";
+
+@font-face{
+  font-family: "MechePro";
+  src: url("../шрифты/MechePro-Light.woff2")format("woff2"),url("../шрифты/MechePro-Light.woff")format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+ font-family: "MechePro";
+ src:url("../шрифты/MechePro-Regular.woff2")format("woff2"),url("../шрифты/MechePro-Regular.woff")format("woff");
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+@font-face{
+  font-family: "MechePro";
+  src:url("../шрифты/MechePro-Bold.woff2")format("woff2"),url("../шрифты/MechePro-Bold.woff")format("woff");
+  font-weight: 700;
+  font-style: normal;
+font-display: swap;
+}
+
+@font-face{
+  font-family: "Klute-Capitals";
+  src: url("../шрифты/Klute-Capitals.woff2")format("woff2"),url("../шрифты/Klute-Capitals.woff")format("woff");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face{
+  font-family: "IgniteDreams-Serif";
+  src: url("../шрифты/IgniteDreams-Serif.woff2")format("woff2"),url("../шрифты/IgniteDreams-Serif.woff")format("woff");
+   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "IgniteDreams-Script";
+  src: url("../шрифты/IgniteDreams-Script.woff2")format("woff2"),url("../шрифты/IgniteDreams-Script.woff")format("woff");
+   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*=================================================================================================================================================*/
+
+.body{
+  font-family: "MechePro";
+  line-height: 1;
+  font-size: 20px;
+  color:black;
+}
+.wrapper{
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.logo-imag img{
+  width: 100%;
+}
+.logo{
+max-width: 530px;
+max-height: 340px;
+}
+
+.menu {
+   font-family: "IgniteDreams-Script"; 
+   font-weight: 400;
+   margin: 0px 10px 50px 10px;
+}
+
+.menu,.menu-list li{/*Ошиблась с обращением, поэтому не могла догадаться как правильно писать обращение, чтобы выстроить все в ряд*/
+  display: inline-block;
+  color:palevioletred;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 3px  #000;
+  font-size: 25px;
+  padding: 0px 10px 0px 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.black-items {
+  max-width: 1050px;
+  margin:0 auto;
+  font-family: "IgniteDreams-Serif";/* очень важный момент, ЭТОТ ШРИФТ ДЛЯ АНГЛИЙСКОГО ТЕКСТА, Я, ЭТО ПОНЯЛА, КОГДА НАЧАЛА РАЗБИРАТЬСЯ,ПОЧЕМУ НЕ РАБОТАЕТЬ ШРИФТ, ЗАЬЫВ РАЗНИЦУ ПРО КИРИЛИЧЕСКИЙ ШРИФТ, НУЖНО ПОМНИТЬ*/
+  font-weight: 700;
+}
+.item {
+  margin: 0px 0px 40px 0px;
+}
+.imag-item{
+text-align: center;
+/*width: 100%; мой изоброжение вместились в свой родительский блок, не смотря на разные размеры. НО ЦЕНТРОВКА НЕ РАБОТАЕТ  С .imag-item img  */
+ /*max-width: 900px;
+ margin:0 auto;для сравнения цетровки*/
+ padding: 10px;/* ЭТОТ ПАДИНГ ДЛЯ ВСЕГО БЛОКА С КАРТИНКАМИ*/
+}
+img{
+  max-width:500px;
+  max-height:500px;
+}
+
+.text-list .link-text {
+  font-family: "MechePro";
+  font-weight: 300;
+  display: inline-block;/* забыла что нужно добавить  display: inline-block; мучалась НАПОМИНАНИЕ СЕБЕ*/
+  color: rgba(69, 70, 69, 0.701);
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding:0px 0px 10px 0px;
+ 
+}
+.text-list{
+  margin: 0px 0px 20px 0px;/*для себя, сделала много вариантов.Только потом дошло, что нужно обращятся к тегу ul*/
+}
+
+.inline-text {
+  color: red;
+  text-shadow: 10px 5px 0 rgba(238, 17, 17, 0.11);
+  font-size: 35px;
+  text-transform: uppercase;
+  text-decoration:underline;
+  display: inline-block;
+  margin: 0px 0px 40px 0px;/*писать отступы сверху вниз, слева направо*/
+}
+.inline-span {
+color: blueviolet;
+text-shadow: 1px 1px 2px #000;
+text-decoration: overline;
+text-transform: uppercase;
+display: inline-block;
+font-family: "Klute-Capitals";
+font-size: 25px;
+padding:0px  10px 0px 10px;
+margin: 0px 0px 40px 0px;/*писать отступы сверху вниз, слева направо*/
+}
+
+/*card*/
+
+.block-card{
+max-width: 1050px;
+margin: 0 auto;
+}
+
+
+.card {
+  max-width: 350px;
+  display: inline-block;
+  margin: 0px 0px 80px 65px;/*писать отступы сверху вниз, слева направо*/
+  background-color: antiquewhite;
+}
+
+
+.card-item {
+  max-width:235px;
+  text-align: center;
+  padding: 10px;
+
+}
+.card-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(40, 63, 83);
+  text-shadow: 0  2px  rgb(145, 144, 144);
+  margin: 0px 0px 30px 0px;/*писать отступы сверху вниз, слева направо*/
+}
+
+.card-icon img{
+width: 100%;
+}
+.card-icon{
+  margin: 0px 0px 20px 0px;/*писать отступы сверху вниз, слева направо*/
+}
+.card-text {
+  padding: 10px 0px 10px 0px;/*писать отступы сверху вниз, слева направо*/
+}
+
+.block-list,.nema-list {
+color: coral;
+font-size: 30px;
+display: inline-block;
+
+}
+
+
+.block-list-2,.nema-list-2 {
+color: coral;
+font-size: 30px;
+display: inline-block;
+}
+
+
+.number li{
+  padding-bottom: 20px;/*писать отступы сверху вниз, слева направо*/
+ font-family: "Klute-Capitals";
+ font-weight: 900;
+color:red;
+text-shadow:1px 1px 2px #000;
+text-decoration: underline;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 35px;
+line-height: 1.3;
+}
+.number{
+  margin: 0px 0px 80px 50px;/*писать отступы сверху вниз, слева направо*/
+}
+
+/*писать отступы сверху вниз, слева направо*/
+
+.span-bottom {
+ font-family: "IgniteDreams-Script";
+  font-size: 60px;
+  color: yellowgreen;
+  text-shadow:1px 1px 2px #000;
+   display: inline-block;
+ text-align: center;
+ padding: 10px;
+
+}
+/*писать отступы сверху вниз, слева направо Используем разные варианты, чтобы лучше понять*/
+.imag-bottom {  
+  text-align: center;
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+
+}
+.ico-bottom {
+  width: 375px;
+  height: 375px;
+}
+
+
+.imag-bottom-2 .ico-bottom-2 {
+  width:100%;
+  max-width: 375px;
+  max-height: 375px;
+
+}
+
+.imag-bottom-2{
+  text-align: right;
+  margin: 0px 0px 60px 0px;
+}
+
+.imag-bottom-3 .ico-bottom-3 {
+  width:100%;
+  min-width: 375px;
+  max-height: 375px;
+
+}
+
+.imag-bottom-3{
+  text-align: justify;
+  margin: 0px 0px 80px 0px;
+}
+
+.imag-bottom-4{
+max-width: 1050px;
+  margin: 0 auto;
+
+}
+.ico-bottom-4{
+  width: 100%;
+  min-height: 375px;
+  padding: 10px;
+}
+
+.footer{
+   font-family: "MechePro";
+   font-weight: 700;
+  max-width: 1050px;
+  margin:0 auto 40px;
+  font-size: 35px;
+  color: crimson;
+  text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
